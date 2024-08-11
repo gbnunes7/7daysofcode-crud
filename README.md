@@ -41,11 +41,11 @@ This project is an example of a form that follows CRUD (Create, Read, Update, De
   Open the index.html file in your web browser to view and interact with the form, or visit the deployed version in [Vercel](https://7daysofcode-crud.vercel.app)
 
 ## Contributing
-1 - Fork this repository.
-2 - Create a branch for your feature or fix (git checkout -b feature/MyFeature).
-3 - Commit your changes (git commit -am 'Add new feature').
-4 - Push to the branch (git push origin feature/MyFeature).
-5 - Open a Pull Request.
+- Fork this repository.
+- Create a branch for your feature or fix (git checkout -b feature/MyFeature).
+- Commit your changes (git commit -am 'Add new feature').
+-  Push to the branch (git push origin feature/MyFeature).
+-  Open a Pull Request.
 
 ## License
 
