@@ -17,11 +17,11 @@
                     <label class="text-xl"for="name">
                         Nome
                     </label>
-                    <input class="border rounded px-4 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300" id="name" maxlength="120" name="name" required type="text" />
+                    <input class="border rounded px-4 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300" id="name" minlength="3" maxlength="120" pattern="[a-zA-Z\s]+" name="name" required type="text" />
                     <label class="text-xl" for="birth-date">
                         Data de Nascimento
                     </label>
-                    <input class="border rounded py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300" id="birth-date" name="birth-date" required type="date" />
+                    <input class="border rounded py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300" id="birth-date" name="birth-date" pattern="^(0[1-9]|[12][0-9]|3[01])\/(0[1-9]|1[0-2])\/\d{4}$" required type="date" />
                     <button class="bg-blue-500 text-white font-bold w-full py-2 px-4 mt-12 mx-auto align-center rounded hover:bg-blue-700 active:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition duration-300" type="submit">Salvar</button>
                 </form>
             </section>

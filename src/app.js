@@ -1,8 +1,18 @@
-const btn = document.getElementById('submit')
+const form = document.getElementById('submit')
 
-btn.addEventListener('submit',(event) => {
+form.addEventListener('submit',(event) => {
+    event.preventDefault();
+    const pessoas = JSON.parse(localStorage.getItem('pessoas')) || [];
     const nameValue = document.getElementById('name').value
     const birthDate = document.getElementById('birth-date').value
-    event.preventDefault();
-    console.log('submited' + birthDate + nameValue)
+
+    const pessoa = {
+        name: nameValue,
+        birthday: birthDate,
+    }
+
+    pessoas.push(pessoa)
+    localStorage.setItem('pessoas',JSON.stringify(pessoas))
+
+    console.log('submited')
 })
